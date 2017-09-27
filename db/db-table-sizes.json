@@ -1,0 +1,40 @@
+{
+  "db": [
+    {
+      "users": 50
+    },
+    {
+      "product_types": 20
+    },
+    {
+      "training_programs": 20
+    },
+    {
+      "computers": 40
+    },
+    {
+      "payment_types": 100
+    },
+    {
+      "orders": 200
+    },
+    {
+      "products": 100
+    },
+    {
+      "orders_products": 300
+    },
+    {
+      "departments": 8
+    },
+    {
+      "employees": 25
+    },
+    {
+      "employees_training_programs": 8
+    },
+    {
+      "employees_computers": 8
+    }
+  ]
+}
