@@ -1,27 +1,27 @@
 'use strict';
 
 const faker = require('faker');
-const User = require('../../models/user');
+const Customer = require('../../models/customer');
 
 module.exports.generatePaymentTypes = () => {
   return new Promise( (resolve, reject) => {
-    User.getAll()
-    .then((users) => {
+    Customer.getAll()
+    .then((customers) => {
       let payment_types = [];
-      let usersLen = users.length;
+      let customersLen = customers.length;
 
-      for (let i = 0; i < usersLen+50; i++) {
-        let user_id;
-        if (i+1 > usersLen) {
-          user_id = Math.floor(Math.random() * usersLen) + 1;
+      for (let i = 0; i < customersLen+50; i++) {
+        let customer_id;
+        if (i+1 > customersLen) {
+          customer_id = Math.floor(Math.random() * customersLen) + 1;
         } else {
-          user_id = i+1;
+          customer_id = i+1;
         }
         let name = faker.finance.accountName();
         let account_number = faker.finance.account();
 
         payment_types.push({
-          user_id,
+          customer_id,
           name,
           account_number
         });

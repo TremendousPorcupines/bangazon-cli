@@ -2,8 +2,8 @@
 
 const faker = require('faker');
 
-module.exports.generateUsers = () => {
-  let users = [];
+module.exports.generateCustomers = () => {
+  let customers = [];
 
   for (let i = 0; i < 50; i++) {
     let firstName = faker.name.firstName();
@@ -16,7 +16,7 @@ module.exports.generateUsers = () => {
     let dateCreated = faker.date.past();
     let lastLogin = faker.date.recent();
 
-    users.push({
+    customers.push({
       "first_name": firstName,
       "last_name": lastName,
       "address": address,
@@ -29,5 +29,5 @@ module.exports.generateUsers = () => {
     });
   }
 
-  return users;
+  return customers;
 };
