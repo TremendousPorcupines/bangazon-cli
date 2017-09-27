@@ -10,7 +10,7 @@ generateOrders()
     orders.forEach((order) => {
       db.run(`INSERT INTO orders VALUES(
         NULL,
-        "${order.user_id}",
+        "${order.customer_id}",
         "${order.payment_type_id}")`
       )
     })

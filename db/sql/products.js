@@ -12,7 +12,7 @@ generateProducts()
         NULL,
         "${product.name}",
         "${product.price}",
-        "${product.user_id}",
+        "${product.customer_id}",
         "${product.product_type_id}")`
       )
     })

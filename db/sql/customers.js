@@ -6,7 +6,7 @@ const { generateCustomers } = require('../faker/customers');
 let customers = generateCustomers();
 
 const db = new sqlite3.Database('db/bangazon.sqlite', (err) => {
-  console.log(`Populating ${users.length} customers...`);
+  console.log(`Populating ${customers.length} customers...`);
   customers.forEach((customer) => {
     db.run(`INSERT INTO customers VALUES(
       NULL,

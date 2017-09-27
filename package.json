@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node bin/bangazon",
     "db:reset": "node db/build-bangazon-db",
-    "db:populate": "node db/sql/users && node db/sql/product_types && node db/sql/payment_types && node db/sql/orders && node db/sql/products && node db/sql/order_products",
+    "db:populate": "node db/sql/customers && node db/sql/product_types && node db/sql/payment_types && node db/sql/orders && node db/sql/products && node db/sql/order_products",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {

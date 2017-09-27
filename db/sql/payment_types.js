@@ -12,7 +12,7 @@ generatePaymentTypes()
         NULL,
         "${type.name}",
         "${type.account_number}",
-        "${type.user_id}")`
+        "${type.customer_id}")`
       )
     })
   });
